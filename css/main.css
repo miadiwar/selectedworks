@@ -1,0 +1,370 @@
+/* Media Biasa */
+:root {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  background: #edf2f4;
+}
+
+a:link {
+  text-decoration: none;
+  color: #8d99ae;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #d90429;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+  color: #d90429;
+}
+
+nav {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #edf2f4;
+  color: #2b2d42;
+  overflow: hidden;
+  padding: 10px;
+}
+
+nav p {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+header.header {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 65vh;
+  margin: auto;
+  overflow: hidden;
+  background-position: center;
+}
+
+header.header .tulisan-header {
+  position: absolute;
+  z-index: 1;
+  width: inherit;
+}
+
+header.header .tulisan-header .flex-container1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #edf2f4;
+  margin-bottom: 10px;
+}
+
+header.header .tulisan-header .flex-container1 p.kasian {
+  font-size: 6rem;
+  font-weight: 600;
+  text-align: center;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 25px;
+  padding: 10px;
+}
+
+header.header .tulisan-header .flex-container1 p.tawaran {
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+header.header button.tombol {
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 1.6rem;
+  border-width: 0px;
+  width: 200px;
+  padding: 10px;
+  background-color: #0d6efd;
+  color: #edf2f4;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+}
+
+header.header button.tombol:hover {
+  background: #0257d5;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+header.header button#tutup {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  color: #edf2f4;
+  border-radius: 1.2rem;
+  border-width: 0px;
+  padding: 7px 20px 7px 20px;
+  background-color: #d90429;
+  font-size: 1.2rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+header.header button#tutup:hover {
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  background: #a70320;
+}
+
+header.header div.background {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#8d99ae), to(#2b2d42));
+  background-image: linear-gradient(#8d99ae, #2b2d42);
+  opacity: 0.7;
+  position: relative;
+  width: inherit;
+  height: inherit;
+  margin: auto;
+}
+
+section.hasil {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 47vh;
+  margin: auto;
+  background-color: #d90429;
+  color: #edf2f4;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+section.hasil p {
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+section.hasil p #ucapan {
+  font-size: 1.4rem;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+section.hasil div.card {
+  background-color: #edf2f4;
+  color: #2b2d42;
+  border-radius: 15px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  width: 209px;
+  height: 60px;
+  padding: 10px 17px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 10px 20px #a70320;
+          box-shadow: 0px 10px 20px #a70320;
+}
+
+section.hasil div.card p.card-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  text-align: left;
+  margin-left: 10px;
+}
+
+section.hasil div.card div.card-image {
+  width: 55px;
+  height: 55px;
+  margin-left: 0px;
+  border-radius: 50%;
+  border-width: 3.5px;
+  border-style: outset;
+  border-color: #d90429;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.hasil div.card div.card-image img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 65px;
+}
+
+.footer {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 35vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  overflow: hidden;
+}
+
+.footer .sosialmedia {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+.footer .sosialmedia .logo-sosmed {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer .sosialmedia .logo-sosmed a {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.footer .sosialmedia img {
+  width: 30px;
+}
+
+/* Media Biasa */
+/* Responsive */
+@media screen and (max-width: 450px) {
+  nav p {
+    font-size: 1.9rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  header.header {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 70vh;
+  }
+  header.header .tulisan-header .flex-container1 p.kasian {
+    font-size: 3.8rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 2px;
+  }
+  header.header .tulisan-header .flex-container1 p.tawaran {
+    margin-top: 2px;
+  }
+  section.hasil {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 50vh;
+  }
+  section.hasil p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  section.hasil p #ucapan {
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-align: center;
+  }
+}
+
+/* Responsive */
+/*# sourceMappingURL=main.css.map */

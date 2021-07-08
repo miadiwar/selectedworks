@@ -1,61 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Selamat Lebaran</title>
-	<style>
-		body {font-family: courier new;
-			font-size: 13px;
-			color: chartreuse;
-			background-color: darkslategrey;}
-		.button {background-color: chartreuse;
-			color: darkslategrey;
-			padding: 26px 50px;
-			text-align: center; 
-			width: 150px;
-			border-radius: 50px;
-			margin: auto;
-			font-size: 16px;}
-		.kata-pengantar {padding: 26px;
-			text-align: center;}
-		#teks {
-			width: 500px;
-			padding: 26px 50px;
-			margin: auto;
-			font-size: 20px
-		}
-	</style>
-	<script>
-		function myFunction() {
-			alert('Kenalan dulu dong')
-			var txt
-			var orang = prompt('Namaku Andre, namamu siapa?');
-			if (orang == null || orang == "") {
-				txt = "Lho kok gaada namanya si? Klik lagi ah!";
-			}
-			else {
-				alert('Halo, '+orang+'! Gimana kabarnya?');
-				alert('Semoga baik-baik saja ya! Berhubung hari ini adalah hari yang suci...')
-				alert('Aku pengen ngucapin sesuatu...')
-				switch(confirm('Boleh ngga tapi?')){
-				case true:
-				txt = "Jadi, "+orang+", saya, <b>Michael Andrey Reynardi Adiwarsito</b> beserta keluarga ingin mengucapkan<br>Selamat <b>Hari Raya Lebaran 1442 H</b><br>Minal Aidin Wal Faidzin<br>Mohon maaf kalo misal Andre selama ini ada salah, semoga kita selalu bahagia di hari-hari selanjutnya!"; break
-				case false:
-				txt = "Yah kok gitu sih! Ya intinya cuma mau ngucap selamat merayakan Idul Fitri, semoga "+orang+" selalu bahagia ya!"}
-			}
-			document.getElementById('teks').innerHTML = txt;
-		}
-	</script>
-	</head>
-<body style="margin: 0px">
-	<header>
-		<h1 class="kata-pengantar">Halo, aku pengen mengucapkan sesuatu. Jadi klik tombol dibawah ini!</h1>
-	</header>
-	<section>
-		<div class="button" onclick="myFunction()">
-			Ini Tombol
-		</div>
-		<h3 id="teks"></h3>
-	</section>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="script.js"></script>
+    <title>Website Ucapan Ulang Tahun</title>
+    <link rel="shortcut icon" type="image/svg" href="chick.svg"/>
+  </head>
+  <body>
+    <nav style="order: 1;"><p>happybirthday.com</p></nav>
+    <header class="header" style="background-image: url('ketawa.jpg'); order: 2;">
+      <div class="tulisan-header">
+        <div class="flex-container1">
+          <p class="kasian">kasian gaada yang ngucapin.</p>
+          <p class="tawaran">mau diucapin?</p>
+        </div>
+        <button type="submit" class="tombol" id="tombol-ucapan">klik disini!</button>
+        <button type="submit" id="tutup">tutup ucapan</button>
+      </div>
+      <div class="background"></div>
+    </header>
+    <section class="hasil" style="order: 3;">
+      <p>Ucapan : <p id="ucapan" style="font-weight: normal;"></p>
+    <div class="card"><div class="card-image"><img src="foto-guanteng.png" alt="foto-andre"></div>
+  <p class="card-name">Michael Andrey</p></div></p>
+    </section>
+    <footer class="footer" style="order: 4;">
+      <div class="sosialmedia">
+        <div class="logo-sosmed">
+          <a href="https://www.instagram.com/otisrawida19/" class="instagram"> <img src="instagram.svg" alt="igku" /></a>
+          <a href="https://twitter.com/otisrawida19" class="twitter"> <img src="twitter.svg" alt="twitterku" /></a>
+        </div>
+        <div class="credit-container"> <p>
+          Icons made by
+        </p>
+           <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <p class="credit">Dibuat oleh Michael Andrey, Indonesian. 4 Juli 2021. <br> Photo by <a href="https://unsplash.com/@timothycdykes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Timothy Dykes</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
