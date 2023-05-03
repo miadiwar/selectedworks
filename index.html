@@ -3,23 +3,28 @@
     <head>
         <title>2023 Selected Works</title>
         <style>
-            table {
-                border: 1px;
+            .flex-container1{
+                display: flex;
+            }
+            .flex-container1 > div {
+                margin: 10px;
+            }
+            .flex-container1 > div > video {
+                width: 45vw;
             }
         </style>
     </head>
     <body>
-        <table>
-            <tr>
-                <td>
-                    <video width="640px" height="640px" autoplay>
-                        <source src="hari raya gizi Nasional.mp4" type="video/mp4">
-                    </video>
-                </td>
-                <td>
-                    Hari Gizi Nasional
-                </td>
-            </tr>
-        </table>
+        <div class="flex-container1">
+            <div class="video">
+                <video autoplay>
+                    <source src="Motion Graphics/hari raya gizi Nasional.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="desc">
+                Hari Gizi Nasional
+            </div>
+        </div>
+            
     </body>
 </html>
