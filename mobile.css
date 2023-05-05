@@ -1,0 +1,466 @@
+body {
+    background: #1C1C1A;
+    margin: 0;
+}
+span {
+    color: white;
+}
+
+/* 360px - Mobile */
+
+@media screen and (min-width: 360px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+        border: 0;
+
+        width: 360px;
+        height: 2734px;
+
+        position: relative;
+        
+        /* scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        overflow-x: hidden; */
+
+    }
+    /* .header, .content {
+        scroll-snap-align: top;
+        scroll-snap-stop: always;
+    } */
+
+    div.container > div.header {
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 0px 0px;
+        gap: 24px;
+
+        width: 296px;
+        height: 100vh;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    span.title {
+        width: 275px;
+        height: 240px;
+
+        font-family: 'Switzer';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 67px;
+        line-height: 90%;
+        /* or 60px */
+
+        text-align: right;
+        text-transform: capitalize;
+
+        color: #FFFFFF;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    span.author {
+        width: 157px;
+        height: 12px;
+
+        font-family: 'Switzer';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 12px;
+        /* identical to box height */
+
+        text-align: right;
+
+        color: #FFFFFF;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+    span.socmed-author {
+        width: 89px;
+        height: 24px;
+
+        font-family: 'Switzer';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 12px;
+        text-align: right;
+
+        color: #FFFFFF;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+    }
+
+    div.container > div.content {
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 24px 0px;
+        gap: 24px;
+
+        width: 296px;
+        height: 100vh;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+
+    .content-title {
+        width: 275px;
+        height: 102px;
+
+        font-family: 'Switzer';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 90%;
+        /* or 34px */
+
+        text-transform: capitalize;
+
+        color: #FFFFFF;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+    .karya {
+        width: 296px;
+        height: 296px;
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    
+
+    .content-desc {
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+
+        width: 296px;
+        height: 204px;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+    }
+
+    .content-desc > .glance {
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+
+        width: 296px;
+        height: 63px;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    span.desc-title {
+        width: 39px;
+        height: 7px;
+
+        font-family: 'Sentient';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 7px;
+        line-height: 95%;
+        /* identical to box height, or 7px */
+
+        display: flex;
+        align-items: center;
+
+        color: rgba(255, 255, 255, 0.5);
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    span.desc-content{
+        width: 296px;
+        height: 48px;
+
+        font-family: 'Switzer';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 130%;
+        text-align: justify;
+        /* or 12px */
+
+        display: flex;
+        align-items: center;
+
+        color: #FFFFFF;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+    .other-info {
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+
+        width: 296px;
+        height: 117px;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+    .other-info > .categories {
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+
+        width: 136px;
+        height: 100px;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    .categories > .fow {
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+
+        width: 160px;
+        height: 51px;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    .categories > .keyword {
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+
+        width: 256px;
+        height: 33px;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+    span.cat-title {
+        width: 45px;
+        height: 7px;
+
+        font-family: 'Sentient';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 7px;
+        line-height: 95%;
+        /* identical to box height, or 7px */
+
+        display: flex;
+        align-items: center;
+
+        color: rgba(255, 255, 255, 0.5);
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    .other-info > .roles {
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+
+        width: 136px;
+        height: 117px;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+    .project {
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+
+        width: 46px;
+        height: 25px;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    .supervisor {
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+
+        width: 117px;
+        height: 35px;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+    .designer {
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+
+        width: 64px;
+        height: 25px;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+    }
+    .desc-title {
+        width: 64px;
+        height: 10px;
+
+        font-family: 'Switzer';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 110%;
+        /* identical to box height, or 10px */
+
+        display: flex;
+        align-items: center;
+
+        color: #FFFFFF;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+}
