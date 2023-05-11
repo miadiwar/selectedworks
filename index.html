@@ -4,26 +4,86 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>2023 Selected Works</title>
-        <link rel="stylesheet" href="mobile.css">
-        <link href="https://fonts.googleapis.com/css?family=Switzer&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Sentient&display=swap" rel="stylesheet" />   
+        <style>
+            @import url('switzer.css');
+            html {
+                scroll-behavior: smooth;
+            }
+            .container {
+                overflow-y: scroll;
+                scroll-snap-type: y proximity;
+                /* overflow-x: hidden; */
+            }
+            /* scroll-snap */
+            .header, .content {
+                scroll-snap-align: start;
+                scroll-snap-stop: always;
+            }
+            @keyframes fadein {
+                from {
+                    opacity: 0%;
+                }
+                to {
+                    opacity: 100%;
+                }
+            }
+            #andre {
+                opacity: 50%;
+            }
+            body {
+                background: #1c1c1a;
+                margin: 0;
+            }
+            span {
+                color: white;
+            }
+            video::-webkit-media-controls-timeline {
+                opacity: 70%;
+            }
+            video::-webkit-media-controls-current-time-display, video::-webkit-media-controls-time-remaining-display {
+                font-family: 'Switzer';
+                font-style: normal;
+                font-size: 1rem;
+            }    
+            video::-webkit-media-controls-current-time-display  {
+                opacity: 50%;
+            }
+            ::-webkit-scrollbar {
+                width: 4px;
+                height: 4px;
+            }
+            ::-webkit-scrollbar-track {
+                background: #1c1c1a;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: white;
+                border-radius: 2px;
+            }            
+        </style>
+        <link rel="stylesheet" href="css/mobile.css">
+        <link rel="stylesheet" href="css/tablet.css">
+        <link rel="stylesheet" href="css/smallscreen.css">
+        <link rel="stylesheet" href="css/basiclaptop.css">
+        <link rel="stylesheet" href="css/smallmonitor.css">
+        <link rel="stylesheet" href="css/bigmonitor.css">
+        
     </head>
     <body>
         <div class="container">
             <div class="header">
                 <span class="title">Selected Motion Graphic Works</span>
-                <span class="author">of Michael Andrey Reynardi Adiwarsito</span>
+                <span class="author">of Michael <span id="andre">Andrey</span> Reynardi Adiwarsito</span>
                 <span class="socmed-author">@otisrawida miadiwar@gmail.com</span>
             </div>
             <div class="content">
-                <span class="content-title">ULTIMAGZ Countdown To OMB UMN</span>
-                <video class="karya" autoplay>
-                    <source src="hari raya gizi Nasional.mp4" type="video/mp4">
-                </video>
+                    <video class="karya" autoplay controls>
+                        <source src="H-1.mp4" type="video/mp4">
+                    </video>
+                <div class="content-title">ULTIMAGZ Countdown To OMB UMN</div>
                 <div class="content-desc">
                     <div class="glance">
                         <span class="desc-title">In A Glance</span>
-                        <span class="desc-content">
+                        <span id="glance-content" class="body">
                             A semi long-term project that involves a challenging visual direction; vintage. 
                             The project requires versatile delivery options that are not rigid or limited. 
                             It requires a high level of creativity and adaptability to successfully execute the project.
@@ -33,25 +93,109 @@
                         <div class="categories">
                             <div class="fow">
                                 <span class="desc-title">Field of Work</span>
-                                <span class="cat-title">News and Editorial</span>
+                                <span id="fow-content" class="body2">News and Editorial</span>
                             </div>
                             <div class="keyword">
                                 <span class="desc-title">Keyword</span>
-                                <span class="cat-title">Countdown</span>
+                                <span id="key-content" class="body2">Countdown</span>
                             </div>
                         </div>
                         <div class="roles">
                             <div class="project">
                                 <span class="desc-title">Project Under</span>
-                                <span class="desc-content">ULTIMAGZ</span>
+                                <span id="pu-content" class="body">ULTIMAGZ</span>
                             </div>
                             <div class="supervisor">
                                 <span class="desc-title">Supervisors</span>
-                                <span class="desc-content">Marshel Ryan, Katryn Ivania, Eunike Agata</span>
+                                <span id="spv" class="body">Marshel Ryan, Katryn Ivania, Eunike Agata</span>
                             </div>
                             <div class="designer">
                                 <span class="desc-title">Motion Designer</span>
-                                <span class="desc-content">Michael A.</span>
+                                <span id="ace" class="body">Michael A.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                    <video class="karya" autoplay controls>
+                        <source src="H-1.mp4" type="video/mp4">
+                    </video>
+                <div class="content-title">ULTIMAGZ Countdown To OMB UMN</div>
+                <div class="content-desc">
+                    <div class="glance">
+                        <span class="desc-title">In A Glance</span>
+                        <span id="glance-content" class="body">
+                            A semi long-term project that involves a challenging visual direction; vintage. 
+                            The project requires versatile delivery options that are not rigid or limited. 
+                            It requires a high level of creativity and adaptability to successfully execute the project.
+                        </span>
+                    </div>
+                    <div class="other-info">
+                        <div class="categories">
+                            <div class="fow">
+                                <span class="desc-title">Field of Work</span>
+                                <span id="fow-content" class="body2">News and Editorial</span>
+                            </div>
+                            <div class="keyword">
+                                <span class="desc-title">Keyword</span>
+                                <span id="key-content" class="body2">Countdown</span>
+                            </div>
+                        </div>
+                        <div class="roles">
+                            <div class="project">
+                                <span class="desc-title">Project Under</span>
+                                <span id="pu-content" class="body">ULTIMAGZ</span>
+                            </div>
+                            <div class="supervisor">
+                                <span class="desc-title">Supervisors</span>
+                                <span id="spv" class="body">Marshel Ryan, Katryn Ivania, Eunike Agata</span>
+                            </div>
+                            <div class="designer">
+                                <span class="desc-title">Motion Designer</span>
+                                <span id="ace" class="body">Michael A.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                    <video class="karya" autoplay controls>
+                        <source src="H-1.mp4" type="video/mp4">
+                    </video>
+                <div class="content-title">ULTIMAGZ Countdown To OMB UMN</div>
+                <div class="content-desc">
+                    <div class="glance">
+                        <span class="desc-title">In A Glance</span>
+                        <span id="glance-content" class="body">
+                            A semi long-term project that involves a challenging visual direction; vintage. 
+                            The project requires versatile delivery options that are not rigid or limited. 
+                            It requires a high level of creativity and adaptability to successfully execute the project.
+                        </span>
+                    </div>
+                    <div class="other-info">
+                        <div class="categories">
+                            <div class="fow">
+                                <span class="desc-title">Field of Work</span>
+                                <span id="fow-content" class="body2">News and Editorial</span>
+                            </div>
+                            <div class="keyword">
+                                <span class="desc-title">Keyword</span>
+                                <span id="key-content" class="body2">Countdown</span>
+                            </div>
+                        </div>
+                        <div class="roles">
+                            <div class="project">
+                                <span class="desc-title">Project Under</span>
+                                <span id="pu-content" class="body">ULTIMAGZ</span>
+                            </div>
+                            <div class="supervisor">
+                                <span class="desc-title">Supervisors</span>
+                                <span id="spv" class="body">Marshel Ryan, Katryn Ivania, Eunike Agata</span>
+                            </div>
+                            <div class="designer">
+                                <span class="desc-title">Motion Designer</span>
+                                <span id="ace" class="body">Michael A.</span>
                             </div>
                         </div>
                     </div>

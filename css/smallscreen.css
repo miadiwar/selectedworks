@@ -1,0 +1,513 @@
+/* 1024px - Small Screen */
+
+@media screen and (min-width: 1024px) {
+    .container {
+        /* 1024px - Small Screen */
+
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        
+    }
+    div.container > div.header {
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 0px;
+        gap: 32px;
+
+        width: 832px;
+        height: 100vh;
+
+        animation-duration: 2s;
+        animation-name: fadein;
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;   
+ 
+    }
+    div.container > div.content {
+        /* content */
+        display: block;
+        position: relative;
+        gap: 32px;
+        padding: 51px 0px;
+
+        width: 832px;
+        height: calc(768px - calc(51px*2));
+        animation-duration: 2s;
+        animation-name: fadein;
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;        
+    }
+    span.title {
+        /* Selected Motion Graphic Works */
+
+        width: 621px;
+        height: 243px;
+
+        font-family: 'Switzer';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 90px;
+        line-height: 90%;
+        /* or 81px */
+
+        text-align: right;
+        text-transform: capitalize;
+
+        color: #FFFFFF;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    span.author {
+        /* of Michael Andrey Reynardi Adiwarsito */
+        width: 209px;
+        height: 16px;
+
+        font-family: 'Switzer';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        /* identical to box height */
+
+        text-align: right;
+
+        color: #FFFFFF;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;        
+    }
+    span.socmed-author {
+        /* @otisrawida miadiwar@gmail.com */
+
+width: 119px;
+height: 32px;
+padding-bottom:64px ;
+
+font-family: 'Switzer';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+text-align: right;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+    }
+    div.content-title {
+        /* content-title */
+display: block;
+
+position: absolute;
+width: 544px;
+height: 90px;
+left: 0px;
+top: 51px;
+
+font-family: 'Switzer';
+font-style: normal;
+font-weight: 400;
+font-size: 50.5px;
+line-height: 90%;
+/* or 45px */
+
+text-transform: capitalize;
+
+color: #FFFFFF;
+    }
+    .karya {
+        position: absolute;
+        width: 544px;
+        height: auto;
+        left: 0px;
+        top: 173px;                
+    }
+    div.content-desc {
+        /* content-desc */
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 64px;
+
+position: absolute;
+width: 256px;
+height: 257px;
+left: 576px;
+top: 173px;
+
+
+    }
+    .body {
+        font-family: 'Switzer';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 130%;
+    }
+    .body2 {
+        font-family: 'Switzer';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 110%;
+    }
+    div.content-desc > div.glance {
+        /* glance */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 256px;
+height: 63px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+    }
+    span.desc-title {
+        font-family: 'Sentient';
+font-style: normal;
+font-weight: 300;
+font-size: 7px;
+line-height: 95%;
+/* identical to box height, or 7px */
+
+display: flex;
+align-items: center;
+
+color: rgba(255, 255, 255, 0.5);
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+    }
+    span#glance-content {
+        width: 256px;
+height: 48px;
+
+display: flex;
+align-items: center;
+text-align: left;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+    }
+    div.other-info {
+        /* other-info */
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 256px;
+height: 130px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+    }
+    div.other-info > div.categories {
+/* categories */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 32px;
+
+width: 224px;
+height: 65px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;        
+    }
+    div.categories > div.fow {
+        /* fow */
+
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 4px;
+
+        width: 64px;
+        height: 65px;
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;        
+    }
+    div.categories > div.keyword {
+        /* keyword */
+
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 4px;
+
+        width: 128px;
+        height: 29px;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;        
+    }
+    span#key-content {
+        /* Countdown */
+
+
+        width: 84px;
+        height: 18px;     
+        
+        display: flex;
+        align-items: center;
+        
+        color: #FFFFFF;
+        
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 1;
+        flex-grow: 0;        
+    }
+    span#fow-content {
+        width: inherit;
+        height: 54px;
+        
+        display: flex;
+        align-items: center;
+        
+        color: #FFFFFF;
+        
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;        
+    }
+    div.other-info > div.roles {
+        /* roles */
+
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 32px;
+
+        width: 256px;
+        height: 41px;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;        
+    }
+    div.project {
+        /* project */
+
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 4px;
+
+        width: 64px;
+        height: 21px;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;         
+    }
+    div.supervisor {
+        /* supervisor */
+
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 4px;
+
+        width: 64px;
+        height: 41px;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 2;
+        flex-grow: 0;        
+    }
+    div.designer {
+        /* designer */
+
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 4px;
+
+        width: 64px;
+        height: 21px;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;         
+    }
+    span#pu-content {
+        /* ULTIMAGZ */
+
+        width: 44px;
+        height: 10px;     
+        display: flex;
+        align-items: center;
+        
+        color: #FFFFFF;
+        
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 1;
+        flex-grow: 0;           
+    }
+    span#spv {
+        width: inherit;
+        height: 30px;
+
+        display: flex;
+        align-items: center;
+        
+        color: #FFFFFF;
+        
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 1;
+        flex-grow: 0;        
+    }
+    span#ace {
+        width: 42px;
+        height: 10px;
+
+        display: flex;
+        align-items: center;
+        
+        color: #FFFFFF;
+        
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 1;
+        flex-grow: 0;        
+    }
+}

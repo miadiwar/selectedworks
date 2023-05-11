@@ -1,0 +1,508 @@
+
+
+@media screen and (min-width: 1368px) {
+    :root {
+        --lebarareakonten: 1120px;
+        font-size: 16px;
+    }
+    .container {
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        
+    }
+    div.container > div.header {
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 0px;
+        gap: 32px;
+
+        width: var(--lebarareakonten);
+        height: 100vh;
+
+        animation-duration: 2s;
+        animation-name: fadein;
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;   
+ 
+    }
+    div.container > div.content {
+        /* content */
+        display: block;
+        position: relative;
+        padding: 64px 0px;
+
+        width: var(--lebarareakonten);
+        height: 100vh;
+        animation-duration: 2s;
+        animation-name: fadein;
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;        
+    }
+    span.title {
+        /* Selected Motion Graphic Works */
+
+        width: 819px;
+        height: 321px;
+
+        font-family: 'Switzer';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 119px;
+        line-height: 90%;
+        /* or 81px */
+
+        text-align: right;
+        text-transform: capitalize;
+
+        color: #FFFFFF;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    span.author {
+        /* of Michael Andrey Reynardi Adiwarsito */
+        width: 278px;
+        height: 21px;
+        
+        font-family: 'Switzer';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 21px;
+        text-align: right;
+        
+        color: #FFFFFF;
+        
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 1;
+        flex-grow: 0;        
+    }
+    span.socmed-author {
+        /* @otisrawida miadiwar@gmail.com */
+
+        width: 159px;
+        height: 42px;
+        
+        font-family: 'Switzer';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 21px;
+        text-align: right;
+        
+        color: #FFFFFF;
+        
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+    }
+    div.content-title {
+        /* content-title */
+        display: block;
+
+        position: absolute;
+        width: 448px;
+        height: 180px;
+        left: 672px;
+        top: 64px;
+
+        font-family: 'Switzer';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 4.209rem;
+        line-height: 90%;
+        /* or 45px */
+
+        text-transform: capitalize;
+
+        color: #FFFFFF;
+    }
+    .karya {
+        position: absolute;
+        width: 640px;
+        height: auto;
+        left: 0px;
+        top: 64px;               
+    }
+    div.content-desc {
+        /* content-desc */
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 48px;
+
+        position: absolute;
+        width: 448px;
+        height: 425px;
+        left: 672px;
+        top: 276px;
+    }
+    .body {
+        font-family: 'Switzer';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 130%;
+    }
+    .body2 {
+        font-family: 'Switzer';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.777rem;
+        line-height: 110%;
+    }
+    div.content-desc > div.glance {
+        /* glance */
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+
+        width: 448px;
+        height: 103px;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    span.desc-title {
+        font-family: 'Sentient';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 0.75rem;
+        line-height: 95%;
+        /* identical to box height, or 7px */
+
+        display: flex;
+        align-items: center;
+
+        color: rgba(255, 255, 255, 0.5);
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    span#glance-content {
+        width: inherit;
+        height: 84px;
+
+        display: flex;
+        align-items: center;
+        text-align: left;
+
+        color: #FFFFFF;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+    div.other-info {
+        /* other-info */
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 48px;
+
+        width: 338px;
+        height: 274px;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+    div.other-info > div.categories {
+        /* categories */
+
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 32px;
+
+        width: 338px;
+        height: 77px;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;        
+    }
+    div.categories > div.fow {
+        /* fow */
+
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 4px;
+        
+        width: 160px;
+        height: 77px;
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;        
+    }
+    div.categories > div.keyword {
+        /* keyword */
+
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 4px;
+
+        width: 146px;
+        height: 46px;
+        
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;        
+    }
+    span#key-content {
+        /* Countdown */
+
+
+        width: inherit;
+        height: 31px;     
+        
+        display: flex;
+        align-items: center;
+        
+        color: #FFFFFF;
+        
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 1;
+        flex-grow: 0;        
+    }
+    span#fow-content {
+        width: inherit;
+        height: 62px;
+        
+        display: flex;
+        align-items: center;
+        
+        color: #FFFFFF;
+        
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;        
+    }
+    div.other-info > div.roles {
+        /* roles */
+
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        
+        width: 256px;
+        height: 149px;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;        
+    }
+    div.project {
+        /* project */
+
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+
+        width: 160px;
+        height: 33px;        
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;         
+    }
+    div.supervisor {
+        /* supervisor */
+
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+
+        width: inherit;
+        height: 51px;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 2;
+        flex-grow: 0;        
+    }
+    div.designer {
+        /* designer */
+
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+
+        width: 160px;
+        height: 33px;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;         
+    }
+    span#pu-content {
+        /* ULTIMAGZ */
+
+        width: 77px;
+        height: 18px;     
+        display: flex;
+        align-items: center;
+        
+        color: #FFFFFF;
+        
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 1;
+        flex-grow: 0;           
+    }
+    span#spv {
+        width: inherit;
+        height: 36px;
+
+        display: flex;
+        align-items: center;
+        
+        color: #FFFFFF;
+        
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 1;
+        flex-grow: 0;        
+    }
+    span#ace {
+        width: 75px;
+        height: 18px;
+
+        display: flex;
+        align-items: center;
+        
+        color: #FFFFFF;
+        
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 1;
+        flex-grow: 0;        
+    }
+}
